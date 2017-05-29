@@ -27,6 +27,13 @@ namespace dotnet_core.Controllers
             return View();
         }
 
+        public IActionResult Dashboard() 
+        {
+            ViewData["Message"] = "Your dashboard.";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();
